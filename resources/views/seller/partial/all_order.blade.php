@@ -122,7 +122,7 @@
                             <i class="ri-delete-bin-fill"></i>
                         </a>
                     @endif
-                    @if($selected_tab == 'ready_to_ship' || $selected_tab == 'manifest' || ($selected_tab == 'reverse' && $o->o_type == 'reverse' && $o->status != 'rto_delivered'))
+                    @if($selected_tab == 'ready_to_ship' || $selected_tab == 'manifest' || ($selected_tab == 'reverse' && $o->o_type == 'reverse' && $o->status != 'rto_delivered' && $o->status != 'cancelled'))
                         <a type="button" class="btn btn-sm btn-danger fw-semibold cancel_order" data-number="{{$o->id}}" data-bs-toggle="tooltip"
                            data-bs-placement="top" title="Cancel Order">
                             <i class="ri-close-fill"></i>
