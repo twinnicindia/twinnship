@@ -1,0 +1,2 @@
+2024-12-01 08:32:06 : Cancel Request for SF1477176163TWN :  : {"request_id":"SF1477176163TWN","cancel_remarks":"Seller Cancellation"}
+2024-12-01 08:32:07 : Cancel Response for SF1477176163TWN :  : {"responseMsg":"Pickup request is already cancelled","responseCode":200}

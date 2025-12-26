@@ -1,0 +1,8 @@
+2024-12-29 19:29:48 : Delhivery Cancel Request for - 27233510038043 : {"waybill":"27233510038043","cancellation":"true"}
+2024-12-29 19:29:49 : Delhivery Cancel Response for - 27233510038043 : {"status":true,"waybill":"27233510038043","remark":"Shipment has been cancelled.","order_id":"4577-3"}
+2024-12-29 19:29:49 : Delhivery Cancel Request for - 27233510038043 : {"waybill":"27233510038043","cancellation":"true"}
+2024-12-29 19:29:49 : Delhivery Cancel Response for - 27233510038043 : {"status":true,"waybill":"27233510038043","remark":"Shipment has been cancelled.","order_id":"4577-3"}
+2024-12-29 19:31:28 : Delhivery Cancel Request for - 27233510038264 : {"waybill":"27233510038264","cancellation":"true"}
+2024-12-29 19:31:28 : Delhivery Cancel Response for - 27233510038264 : {"status":true,"waybill":"27233510038264","remark":"Shipment has been cancelled.","order_id":"4612-3"}
+2024-12-29 19:31:28 : Delhivery Cancel Request for - 27233510038264 : {"waybill":"27233510038264","cancellation":"true"}
+2024-12-29 19:31:28 : Delhivery Cancel Response for - 27233510038264 : {"status":true,"waybill":"27233510038264","remark":"Shipment has been cancelled.","order_id":"4612-3"}

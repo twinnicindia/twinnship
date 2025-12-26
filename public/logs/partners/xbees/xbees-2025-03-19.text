@@ -1,0 +1,2 @@
+2025-03-19 11:20:39 : Cancellation Request for : 153666042100110 : {"awb_number":"153666042100110"}
+2025-03-19 11:20:39 : Cancellation Response for 153666042100110 : {"response":true,"message":"Shipment cancelled successfully.","awb_number":"153666042100110"}

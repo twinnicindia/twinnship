@@ -1,0 +1,2 @@
+2025-03-02 12:11:19 : Delhivery Cancel Request for - 27233710004502 : {"waybill":"27233710004502","cancellation":"true"}
+2025-03-02 12:11:19 : Delhivery Cancel Response for - 27233710004502 : {"status":true,"waybill":"27233710004502","remark":"Shipment has been cancelled.","order_id":"6512-3"}

@@ -1,0 +1,7 @@
+2024-10-17 03:19:56 : Data : "cURL error 28: Operation timed out after 30001 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://track.delhivery.com/api/v1/packages/json?waybill=28072410005736&token=cff281f047354da104dde6852b2d5398b037f092-/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php-855"
+2024-10-17 04:31:35 : Data : "cURL error 28: Operation timed out after 30000 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://track.delhivery.com/api/v1/packages/json/?waybill=28072410005714&token=cff281f047354da104dde6852b2d5398b037f092-/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php-855"
+2024-10-17 07:30:27 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2024-10-17 09:19:07 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2024-10-17 10:55:08 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2024-10-17 11:18:04 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2024-10-17 11:30:13 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"

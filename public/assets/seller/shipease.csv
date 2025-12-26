@@ -1,0 +1,2 @@
+Order Number,Payment Type,Order Type,Customer Name,Address 1,Address 2,City,State,Country,Pincode,Country Code,Contact No,Weight(kg),Length(cm),Height(cm),Breadth(cm),Shipping Charges,Cod Charges,Discount,Invoice Total,Reseller Name,Suggested AWB,Product Name 1,Product SKU1,Product Quantity 1,Product Name 2,Product SKU 2,Product Quantity 2,Product Name 3,Product SKU 2,Product Quantity 3
+1001,cod,forward,Vivek,MG Road Delhi,Near Sahara Mall,Gurgaon,Haryana,India,122001,91,7894587845,100,10,11,12,23,45,35,5000,,,Product 1,Prod1,10,Product 2,Prod2,40,Product 3,Prod3,10

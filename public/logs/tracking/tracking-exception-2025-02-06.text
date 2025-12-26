@@ -1,0 +1,1 @@
+2025-02-06 07:30:32 : Data : "cURL error 28: Operation timed out after 30001 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://track.delhivery.com/api/v1/packages/json/?waybill=27233710004303&token=8dc254096903ba9defd9288f7a128ec21eaccfa9-/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php-855"

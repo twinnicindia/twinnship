@@ -1,0 +1,4 @@
+2025-01-20 18:17:34 : Cancel Request for SF1553764649TWN :  : {"request_id":"SF1553764649TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-20 18:17:35 : Cancel Response for SF1553764649TWN :  : {"responseMsg":"Pickup request is cancelled successfully","responseCode":200}
+2025-01-20 18:17:51 : Cancel Request for SF1556740205TWN :  : {"request_id":"SF1556740205TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-20 18:17:52 : Cancel Response for SF1556740205TWN :  : {"responseMsg":"Pickup request is cancelled successfully","responseCode":200}

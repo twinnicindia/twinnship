@@ -1,0 +1,4 @@
+2025-06-08 12:31:26 : Delhivery Cancel Request for - 27233510058111 : {"waybill":"27233510058111","cancellation":"true"}
+2025-06-08 12:31:26 : Delhivery Cancel Response for - 27233510058111 : {"status":true,"waybill":"27233510058111","remark":"Shipment has been cancelled.","order_id":"9173-3"}
+2025-06-08 12:31:26 : Delhivery Cancel Request for - 27233510058111 : {"waybill":"27233510058111","cancellation":"true"}
+2025-06-08 12:31:27 : Delhivery Cancel Response for - 27233510058111 : {"status":true,"waybill":"27233510058111","remark":"Shipment has been cancelled.","order_id":"9173-3"}

@@ -1,0 +1,5 @@
+2025-04-24 16:40:39 : Ship Order Response Payload : {"status":false,"message":"Order shipment failed."}
+2025-04-24 16:40:59 : Ship Order Request Payload : {"ApiKey":"BlwBClB5OM4wwosBipt1NJyGPAZOpAWE8GPCDNUU","OrderID":"13971"}
+2025-04-24 16:40:59 : Ship Order Response Payload : {"status":false,"message":{"OrderID":"OrderID invalid data."}}
+2025-04-24 17:26:57 : Ship Order Courier Request Payload : {"ApiKey":"BlwBClB5OM4wwosBipt1NJyGPAZOpAWE8GPCDNUU","OrderID":"13971","CourierPartner":"blue_surface"}
+2025-04-24 17:26:57 : Ship Order Courier Response Payload : {"status":false,"message":{"OrderID":"OrderID invalid data.","CourierPartner":"CourierPartner invalid data."}}
