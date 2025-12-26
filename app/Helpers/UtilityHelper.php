@@ -47,6 +47,8 @@
                 $orderQuery = $orderQuery->where('rto_status','y')->orderBy('awb_assigned_date', 'desc');
             else if($selectedTab == 'manifest')
                 $orderQuery = $orderQuery->whereIn('status',['manifested', 'pickup_scheduled'])->orderBy('awb_assigned_date', 'desc');
+            else if($selectedTab == 'reverse')
+                $orderQuery = $orderQuery->whereIn('o_type',['reverse'])->orderBy('inserted', 'desc');
             return $orderQuery;
         }
 

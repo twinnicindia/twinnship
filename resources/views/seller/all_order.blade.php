@@ -375,6 +375,9 @@
                     <div class="me-2" role="presentation">
                         <a class="nav-buttons cancelled" data-tab="cancelled" href="javascript:" type="button">Cancelled</a>
                     </div>
+                    <div class="me-2" role="presentation">
+                        <a class="nav-buttons reverse" data-tab="reverse" href="javascript:" type="button">Reverse</a>
+                    </div>
                 </div>
                 <div class="text-end d-flex justify-content-end align-items-center">
                     <a type="button" href="javascript:" id="create-order-button" class="btn btn-primary text-white fw-semibold me-2" >
@@ -2041,6 +2044,7 @@
                 case 'returns':
                 case 'manifest':
                 case 'live_orders':
+                case 'reverse':
                     loadAllOrders();
                     break;
                 // case 'manifest':
