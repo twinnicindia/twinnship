@@ -1,0 +1,17 @@
+<svg id="Group_16015" data-name="Group 16015" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-3{fill:#3351c9}
+        </style>
+    </defs>
+    <g id="Group_16004" data-name="Group 16004">
+        <path id="Rectangle_5418" data-name="Rectangle 5418" style="fill:none" d="M0 0h24v24H0z"/>
+        <g id="Group_16358" data-name="Group 16358">
+            <g id="Group_11518" data-name="Group 11518" transform="translate(3 3)">
+                <path id="path5939" d="M4.086 9.631v8.945A1.89 1.89 0 0 0 5.919 20.5h9.091a1.889 1.889 0 0 0 1.832-1.926V9.631L10.369 3.44z" transform="translate(-1.464 -2.502)" style="fill:#6964e2"/>
+                <path id="path5939-2" data-name="path5939" class="cls-3" d="M9.816 2a2.237 2.237 0 0 0-1.647.731l-7.127 7.7a.887.887 0 0 0-.014 1.184.736.736 0 0 0 1.112 0l7.128-7.7a.726.726 0 0 1 1.1 0l7.109 7.685a.736.736 0 0 0 1.112 0 .887.887 0 0 0-.014-1.184l-7.112-7.684A2.236 2.236 0 0 0 9.816 2z" transform="translate(-.808 -2)"/>
+            </g>
+            <path id="Rectangle_5429" data-name="Rectangle 5429" class="cls-3" d="M2 0h.8a2 2 0 0 1 2 2v4.4H0V2a2 2 0 0 1 2-2z" transform="translate(9.6 14.6)"/>
+        </g>
+    </g>
+</svg>

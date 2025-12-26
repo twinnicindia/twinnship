@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    <defs>
+        <style>
+            .cls-1{fill:#90949d}
+        </style>
+    </defs>
+    <g id="Group_16000" data-name="Group 16000" transform="translate(-1175 -16)">
+        <g id="Group_8792" data-name="Group 8792" transform="translate(1178.786 19.786)">
+            <circle id="Ellipse_138" data-name="Ellipse 138" class="cls-1" cx="2" cy="2" r="2" transform="translate(.214 .214)"/>
+            <circle id="Ellipse_139" data-name="Ellipse 139" class="cls-1" cx="2" cy="2" r="2" transform="translate(.214 6.214)"/>
+            <circle id="Ellipse_140" data-name="Ellipse 140" class="cls-1" cx="2" cy="2" r="2" transform="translate(.214 12.214)"/>
+            <circle id="Ellipse_138-2" data-name="Ellipse 138" class="cls-1" cx="2" cy="2" r="2" transform="translate(6.214 .214)"/>
+            <circle id="Ellipse_140-2" data-name="Ellipse 140" class="cls-1" cx="2" cy="2" r="2" transform="translate(6.214 12.214)"/>
+            <circle id="Ellipse_138-3" data-name="Ellipse 138" class="cls-1" cx="2" cy="2" r="2" transform="translate(12.214 .214)"/>
+            <circle id="Ellipse_139-2" data-name="Ellipse 139" class="cls-1" cx="2" cy="2" r="2" transform="translate(12.214 6.214)"/>
+            <circle id="Ellipse_447" data-name="Ellipse 447" class="cls-1" cx="2" cy="2" r="2" transform="translate(6.214 6.214)"/>
+            <circle id="Ellipse_140-3" data-name="Ellipse 140" class="cls-1" cx="2" cy="2" r="2" transform="translate(12.214 12.214)"/>
+        </g>
+        <g id="Group_15945" data-name="Group 15945" transform="translate(-55 -3)">
+            <path id="Rectangle_5217" data-name="Rectangle 5217" transform="translate(1230 19)" style="fill:none" d="M0 0h24v24H0z"/>
+        </g>
+    </g>
+</svg>

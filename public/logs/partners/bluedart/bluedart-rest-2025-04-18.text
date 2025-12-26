@@ -1,0 +1,2 @@
+2025-04-18 15:07:07 : Cancel WayBill Request - 20806000051 : {"Request":{"AWBNo":"20806000051"},"Profile":{"Api_type":"S","LicenceKey":"rngfjlul8jgpwuievulkimszj7sfhtpu","LoginID":"NDA43765"}}
+2025-04-18 15:07:07 : Cancel WayBill Response - 20806000051 : {"CancelWaybillResult":{"AWBNo":"20806000051","CCRCRDREF":null,"IsError":false,"Status":[{"StatusCode":"Valid","StatusInformation":"Your registered shipment 20806000051 has been cancelled successfully"}]}}

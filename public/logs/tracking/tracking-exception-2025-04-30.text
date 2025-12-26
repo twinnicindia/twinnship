@@ -1,0 +1,8 @@
+2025-04-30 07:30:38 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2025-04-30 09:30:04 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2025-04-30 11:30:33 : Data : "cURL error 28: Operation timed out after 30002 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://track.delhivery.com/api/v1/packages/json/?waybill=27233710005213&token=8dc254096903ba9defd9288f7a128ec21eaccfa9-/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php-855"
+2025-04-30 13:20:57 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2025-04-30 14:54:03 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2025-04-30 17:18:04 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2025-04-30 17:30:08 : Data : "String could not be parsed as XML-/var/www/html/app/Libraries/BluedartRest.php-170"
+2025-04-30 21:19:36 : Data : "cURL error 28: Operation timed out after 30001 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://track.delhivery.com/api/v1/packages/json?waybill=27233510053082&token=3139b9184109955719485ee59c4c2dd2dc19bf9b-/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php-855"

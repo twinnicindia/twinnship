@@ -1,0 +1,345 @@
+.custom-rating {
+    width: 500px;
+    max-width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .2)
+}
+
+.progress {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+    display: inline-block;
+    border: 0
+}
+
+.progress.lg {
+    width: 50px;
+    height: 50px;
+    line-height: 50px
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #ededed;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.progress .progress-left {
+    left: 0
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 4px;
+    border-style: solid;
+    position: absolute;
+    top: 0
+}
+
+.progress[data-percentage="20"] {
+    border-color: #ffb43e
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-left: 0;
+    transform-origin: center left
+}
+
+.progress .progress-right {
+    right: 0
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-right: 0;
+    transform-origin: center right
+}
+
+.progress .progress-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #000;
+    font-weight: bold
+}
+
+.progress.bad .progress-right .progress-bar {
+    -webkit-animation: loading-1 .75s linear forwards;
+    animation: loading-1 .75s linear forwards;
+    border-color: red
+}
+
+.progress.bad .progress-left .progress-bar {
+    -webkit-animation: 0;
+    animation: 0
+}
+
+.progress.average .progress-right .progress-bar {
+    -webkit-animation: loading-2 .75s linear forwards;
+    animation: loading-2 .75s linear forwards;
+    border-color: #ffb43e
+}
+
+.progress.average .progress-left .progress-bar {
+    -webkit-animation: 0;
+    animation: 0
+}
+
+.progress.amberA .progress-right .progress-bar {
+    -webkit-animation: loading-2-alt .75s linear forwards;
+    animation: loading-2-alt .75s linear forwards;
+    border-color: #ffb43e
+}
+
+.progress.amberA .progress-left .progress-bar {
+    -webkit-animation: loading-2-amb-left 1.5s linear forwards .75s;
+    animation: loading-2-amb-left 1.5s linear forwards .75s;
+    border-color: #ffb43e
+}
+
+.progress.green .progress-right .progress-bar {
+    -webkit-animation: loading-3lt .75s linear forwards;
+    animation: loading-3lt .75s linear forwards;
+    border-color: #60b636
+}
+
+.progress.green .progress-left .progress-bar {
+    -webkit-animation: loading-green 1.5s linear forwards .75s;
+    animation: loading-green 1.5s linear forwards .75s;
+    border-color: #60b636
+}
+
+.progress.agrade .progress-right .progress-bar {
+    -webkit-animation: loading-3lt .75s linear forwards;
+    animation: loading-3lt .75s linear forwards;
+    border-color: #60b636
+}
+
+.progress.agrade .progress-left .progress-bar {
+    -webkit-animation: loading-3 1.5s linear forwards .75s;
+    animation: loading-3 1.5s linear forwards .75s;
+    border-color: #60b636
+}
+
+.progress.agradePlus .progress-left .progress-bar {
+    -webkit-animation: loading-3lt 1.5s linear forwards .75s !important;
+    animation: loading-3lt 1.5s linear forwards .75s !important;
+    border-color: #60b636
+}
+
+.progress.agradeSimilar5 .progress-left .progress-bar {
+    -webkit-animation: loading-4 1.5s linear forwards .75s;
+    animation: loading-4 1.5s linear forwards .75s;
+    border-color: #60b636
+}
+
+@-webkit-keyframes loading-1 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(72deg)
+    }
+}
+
+@keyframes loading-1 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(72deg)
+    }
+}
+
+@-webkit-keyframes loading-2-alt {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes loading-2-alt {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(180deg)
+    }
+}
+
+@-webkit-keyframes loading-2-amb-left {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(36deg)
+    }
+}
+
+@keyframes loading-2-amb-left {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(36deg)
+    }
+}
+
+@-webkit-keyframes loading-2 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(144deg)
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(144deg)
+    }
+}
+
+@-webkit-keyframes loading-3lt {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes loading-3lt {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(180deg)
+    }
+}
+
+@-webkit-keyframes loading-3 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(150deg)
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(150deg)
+    }
+}
+
+@-webkit-keyframes loading-4 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(170deg)
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(170deg)
+    }
+}
+
+@-webkit-keyframes loading-green {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(108deg)
+    }
+}
+
+@keyframes loading-green {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(108deg)
+    }
+}
+
+.progress-bar {
+    border-width: 5px !important
+}
+
+.green-bar .progress-bar {
+    border-color: #008e27
+}
+
+.yellow-bar .progress-bar {
+    border-color: #deb400
+}
+
+.overall_rating:hover~.break_rating {
+    display: flex;
+    opacity: 1;
+    visibility: visible
+}

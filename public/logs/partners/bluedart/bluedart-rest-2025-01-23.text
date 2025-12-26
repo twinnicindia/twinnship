@@ -1,0 +1,2 @@
+2025-01-23 15:05:04 : Cancel WayBill Request - 20689564405 : {"Request":{"AWBNo":"20689564405"},"Profile":{"Api_type":"S","LicenceKey":"rngfjlul8jgpwuievulkimszj7sfhtpu","LoginID":"NDA43765"}}
+2025-01-23 15:05:04 : Cancel WayBill Response - 20689564405 : {"status":400,"title":"Bad Request","error-response":[{"AWBNo":"20689564405","CCRCRDREF":null,"IsError":true,"Status":[{"StatusCode":"CancelFailure","StatusInformation":"No such Waybill Number found."}]}]}

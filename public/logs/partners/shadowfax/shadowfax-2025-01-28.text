@@ -1,0 +1,10 @@
+2025-01-28 15:21:22 : Cancel Request for SF1432460994TWN :  : {"request_id":"SF1432460994TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-28 15:21:23 : Cancel Response for SF1432460994TWN :  : {"responseMsg":"Pickup request is already cancelled","responseCode":200}
+2025-01-28 15:21:26 : Cancel Request for SF1432465691TWN :  : {"request_id":"SF1432465691TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-28 15:21:28 : Cancel Response for SF1432465691TWN :  : {"responseMsg":"Pickup request is already cancelled","responseCode":200}
+2025-01-28 15:34:24 : Cancel Request for SF1436079154TWN :  : {"request_id":"SF1436079154TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-28 15:34:25 : Cancel Response for SF1436079154TWN :  : {"responseMsg":"Pickup request is already cancelled","responseCode":200}
+2025-01-28 15:36:27 : Cancel Request for SF1482998659TWN :  : {"request_id":"SF1482998659TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-28 15:36:28 : Cancel Response for SF1482998659TWN :  : {"responseMsg":"Pickup request is cancelled successfully","responseCode":200}
+2025-01-28 15:37:27 : Cancel Request for SF1489758683TWN :  : {"request_id":"SF1489758683TWN","cancel_remarks":"Seller Cancellation"}
+2025-01-28 15:37:28 : Cancel Response for SF1489758683TWN :  : {"responseMsg":"Pickup request is already cancelled","responseCode":200}

@@ -1,0 +1,181 @@
+.navigation {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 60px;
+  background: #3351c9;
+  overflow-x: hidden;
+  transition: width 0.3s;
+  z-index: 2;
+}
+
+.navigation:hover {
+  width: 250px;
+  z-index: 2;
+}
+
+.logo {
+  padding: 20px 0;
+}
+@media screen and (max-height: 600px) {
+  .navigation {
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 65px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  ul {
+    top: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 65px;
+  }
+
+  .navigation:hover {
+    width: 250px;
+  }
+}
+.navigation::-webkit-scrollbar {
+  width: 0; 
+  height: 0; 
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 60px;
+  transition: max-height 0.0s;
+}
+
+ul {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.active {
+  background: #fff;
+
+}
+
+a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+}
+
+.icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+li svg {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 1;
+
+}
+li svg path{
+    fill: #fff;
+  }
+
+.active svg path {
+    fill: #000;
+  }
+
+.title {
+  position: relative;
+  display: block;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  opacity: 1;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.navigation:hover .logo img {
+  max-height: 40px;
+ position: fixed;
+}
+
+.active .title {
+    color: #000;
+  }
+
+  .collapse__toggle {
+    display: none;
+}
+
+.collapse__link {
+    cursor: pointer;
+}
+
+.collapse__menu {
+    display: none;
+}
+
+.collapse__toggle:checked + .collapse__link + .collapse__menu {
+    display: block;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+.menu {
+  position: relative;
+  z-index: 2;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 88%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 95%;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  color: black;
+}
+
+.menu-item:hover {
+  background-color: #3351c9;
+  color: #fff;
+}
