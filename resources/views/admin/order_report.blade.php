@@ -84,6 +84,16 @@
                                                     <label for="order_type">Order Type</label>
                                                     <select name="order_type" id="order_type" class="form-control">
                                                         <option value="0">All</option>
+                                                        <option value="forward">Forward</option>
+                                                        <option value="reverse">Reverse</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label for="o_type">Order Mode</label>
+                                                    <select name="o_type" id="o_type" class="form-control">
+                                                        <option value="0">All</option>
                                                         <option value="cod">COD</option>
                                                         <option value="prepaid">Prepaid</option>
                                                     </select>
