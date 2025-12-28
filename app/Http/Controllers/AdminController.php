@@ -2854,7 +2854,7 @@ class AdminController extends Controller
                         'orders.delivered_date',
                         'orders.customer_order_number',
                         'orders.courier_partner',
-                        'orders.order_type',
+                        'orders.o_type',
                         'orders.s_pincode',
                         'orders.s_state',
                         'orders.s_city',
@@ -2913,6 +2913,9 @@ class AdminController extends Controller
                         $query = $query->whereIn('orders.awb_number', $order)
                             ->orWhereIn('orders.id', $order);
                     }
+                }
+                if($request->o_type && $request->o_type != "0") {
+                    $query = $query->where('orders.o_type', $request->o_type);
                 }
             }
             //dd($all_data);
