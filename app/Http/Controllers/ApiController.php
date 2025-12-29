@@ -4722,4 +4722,104 @@ class ApiController extends Controller {
         $response['data'] = $pincode;
         return response()->json($response);
     }
+
+    //Track order  by costumer ID
+    function trackOrderByOrderNumber(Request $request) {
+        $validator = new Validator();
+        $sellerId = null;
+        //Set validation rules
+        $validator->rules([
+            'ApiKey' => [
+                'required' => true,
+                'not_null' => true,
+                'rules' => [
+                    'valid_api_key' => function($apiKey) use(&$sellerId) {
+                        $seller = Seller::where('api_key', $apiKey)->first();
+                        if(!empty($seller)) {
+                            $sellerId = $seller->id;
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                ]
+            ],
+            'customerOrderNumber' => 'required|not_null'
+        ]);
+
+        //Set error messages
+        $validator->messages([
+            'ApiKey' => [
+                'rules' => [
+                    'valid_api_key' => 'Invalid api key.'
+                ]
+            ],
+        ]);
+
+        Logger::write('logs/api/track-order-'.date('Y-m-d').'.text', [
+            'title' => 'Track Order Request Payload',
+            'data' => $request->all()
+        ]);
+
+        if($validator->validate($request->all())) {
+            // Cache api order tracking data for 20 hours
+            //Cache::store('redis')->forget('api-tracking-'.$request->customerOrderNumber);
+            $res = Cache::store('redis')->remember('api-tracking-'.$request->customerOrderNumber, (60*60)*20, function() use($request) {
+                $order = Order::where('customer_order_number', $request->customerOrderNumber)->select('id', 'awb_number', 'customer_order_number', 'status', 'rto_status', 'courier_partner')->first();
+                if($order == null) {
+                    $res['OrderId'] = null;
+                    $res['customerOrderNumber'] = $request->customerOrderNumber;
+                    $res['CourierPartner'] = null;
+                    $res['CurrentStatus'] = 'NA';
+                    $res['StatusCode'] = null;
+                    $res['OrderHistory'] = [];
+                    return $res;
+                }
+                $orderTracking = OrderTracking::where('awb_number', $order->awb_number)->orderBy('id', 'desc')->get()->toArray();
+                if(count($orderTracking) > 0) {
+                    $res['OrderId'] = $order->id;
+                    $res['customerOrderNumber'] = $order->customerOrderNumber;
+                    $res['CourierPartner'] = ShippingHelper::GetPartnerName($order->courier_partner);
+                    $res['CurrentStatus'] = $orderTracking[0]['status'];
+                    $res['StatusCode'] = $order->status ?? "manifested";
+                    if($res['StatusCode'] == 'delivered' && $order->rto_status == 'y') {
+                        $res['StatusCode'] = 'rto_delivered';
+                    }
+                    if($res['StatusCode'] == 'in_transit' && $order->rto_status == 'y') {
+                        $res['StatusCode'] = 'rto_in_transit';
+                    }
+                    foreach($orderTracking as $orderHistory) {
+                        $res['OrderHistory'][] = [
+                            'status_code' => $orderHistory['status_code'],
+                            'status' => $orderHistory['status'],
+                            'status_description' => $orderHistory['status_description'],
+                            'remarks' => $orderHistory['remarks'],
+                            'location' => $orderHistory['location'],
+                            'updated_date' => date('Y-m-d H:i:s', strtotime($orderHistory['updated_date']))
+                            // 'updated_date' => $orderHistory['created_at']
+                        ];
+                    }
+                    $res['OrderHistory'][0]['StatusCode'] = $res['StatusCode'];
+                } else {
+                    $res['OrderId'] = $order->id;
+                    $res['AWBNumber'] = $order->awb_number;
+                    $res['CourierPartner'] = ShippingHelper::GetPartnerName($order->courier_partner);
+                    $res['CurrentStatus'] = 'Pending';
+                    $res['StatusCode'] = $order->status ?? null;
+                    $res['OrderHistory'] = [];
+                }
+                return $res;
+            });
+        } else {
+            $res['status'] = false;
+            $res['message'] = $validator->errors();
+        }
+
+        Logger::write('logs/api/track-order-'.date('Y-m-d').'.text', [
+            'title' => 'Track Order Response Payload',
+            'data' => $res
+        ]);
+
+        return response()->json($res);
+    }
 }

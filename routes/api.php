@@ -50,3 +50,4 @@ Route::get('download-zone-mappings/{pincode}',[ApiController::class,'downloadZon
 Route::get('get-routing-code/{awb}',[ApiController::class,'getRoutingCode']);
 Route::post('check-serviceable-pincode',[ApiController::class,'checkPincodeServiceability']);
 Route::post('/check-pincode-pair', [ApiController::class, 'checkPincodeServiceable'])->name('/checkPincodePair');
+Route::post('order-track-by-order-number', [ApiController::class, 'trackOrderByOrderNumber']);
