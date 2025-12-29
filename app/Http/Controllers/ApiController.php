@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helper\ONDCHelper;
-use App\Helper\ShippingHelper;
+use App\Helpers\ShippingHelper;
 use App\Helper\TrackingHelper;
 use App\Libraries\BucketHelper;
 use App\Libraries\Shadowfax;
@@ -4725,6 +4725,7 @@ class ApiController extends Controller {
 
     //Track order  by costumer ID
     function trackOrderByOrderNumber(Request $request) {
+        $data = ShippingHelper::GetPartnerName(1);
         $validator = new Validator();
         $sellerId = null;
         //Set validation rules

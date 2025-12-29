@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Helper\Channels\ShopifyHelper;
 use App\Helper\ReassignHelper;
-use App\Helper\TrackingHelper;
+use App\Helpers\TrackingHelper;
 use App\Jobs\GenerateInvoice;
 use App\Jobs\GenerateLabels;
 use App\Libraries\AmazonDirect;
