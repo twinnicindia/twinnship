@@ -97,7 +97,7 @@ class BluedartRest
                 'EmailID' => 'agautam@twinnicindia.com',
                 'IsForcePickup' => true,
                 'IsPartialPickup' => true,
-                'IsToPayCustomer' => true,
+                'IsToPayCustomer' => false,
                 'IsReversePickup' => false,
                 'MobileTelNo' => $order->p_contact,
                 'NumberofPieces' => 1,
