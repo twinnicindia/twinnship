@@ -97,7 +97,7 @@ class BluedartRest
                 'EmailID' => 'agautam@twinnicindia.com',
                 'IsForcePickup' => true,
                 'IsPartialPickup' => true,
-                'IsToPayCustomer' => false,
+                'IsToPayCustomer' => true,
                 'IsReversePickup' => false,
                 'MobileTelNo' => $order->p_contact,
                 'NumberofPieces' => 1,
@@ -302,7 +302,7 @@ class BluedartRest
                         'CustomerName' => $order->p_customer_name,
                         'CustomerPincode' => $order->p_pincode,
                         'CustomerTelep`hone' => $order->p_contact,
-                        'IsToPayCustomer' => true,
+                        'IsToPayCustomer' => false,
                         'OriginArea' => $this->area,
                         'Sender' => $order->p_customer_name,
                         'VendorCode' => str_pad($order->warehouse_id,9,0,STR_PAD_LEFT) ?? ''
